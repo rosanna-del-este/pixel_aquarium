@@ -1,0 +1,62 @@
+@import "animate.css";
+
+*{
+  padding: 0;
+  margin: :0;
+
+}
+#game{
+  width: 1020px;
+  height: 200px;
+  background: url(water.gif);
+  border: 1px solid black;
+
+}
+#character{
+  width: 100px;
+  height: 100px;
+  background: url(whale.gif);
+  position: relative;
+  top: 110px;
+}
+.animate{
+  animation: jump 1s;
+
+}
+#block{
+  width: 70px;
+  height: 78px;
+  background: url(jellyfish2.gif);
+  position: relative;
+  top: 10px;
+  left: 900px;
+  animation: block 1s linear infinite;
+
+}
+
+
+
+
+@keyframes block {
+  0%{left: 1000px;}
+  100%{left: -40px;}
+
+}
+@keyframes jump {
+  0%{top: 110px;}
+  10%{top: 20px;}
+  90%{top: 20px;}
+  100%{top: 110px;}
+}
+
+.navbar{
+  text-align: center;
+  flex: 1;
+}
+.navbar a{
+  padding: 6px 20px;
+  text-decoration: none;
+  color: solid blue;
+  font-size: 20px;
+  font-weight: bold;
+}
