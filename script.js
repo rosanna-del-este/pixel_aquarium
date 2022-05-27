@@ -3,7 +3,7 @@ document.getElementById("character");
 var block =
 document.getElementById("block");
 
-function jump(){
+window.onkeypress = function jump(){
   if (character.classList != "animate") {
     character.classList.add("animate");
   }
